@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
 
+  resources :work_steps
   devise_for :users
   root 'welcome#index'
 
