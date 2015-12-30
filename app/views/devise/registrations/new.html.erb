@@ -1,8 +1,8 @@
 <%= devise_error_messages! %>
 
 <div class="container">
-  <%= form_for(resource, as: resource_name, url: session_path(resource_name), html: {class: "form-signin"}) do |f| %>
-      <h2 class="form-signin-heading">Please sign in</h2>
+  <%= form_for(resource, as: resource_name, url: registration_path(resource_name), html: {class: "form-signin"}) do |f| %>
+      <h2 class="form-signin-heading">Please sign up</h2>
 
       <%= f.label :email, 'Email Address', class: 'sr-only' %>
       <%= f.email_field :email, autofocus: true, class: 'form-control', placeholder: 'Email Address' %>
@@ -17,6 +17,9 @@
           </label>
       <% end -%>
 
-      <%= f.button "Sign in", class: 'btn btn-lg btn-primary btn-block' %>
+      <br />
+      <%= f.submit 'Sign up', class: 'btn btn-lg btn-primary btn-block' %>
+
+      <!--<%= render "devise/shared/links" %>-->
   <% end %>
 </div>
