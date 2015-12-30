@@ -13,6 +13,19 @@
 
 ActiveRecord::Schema.define(version: 20151230171258) do
 
+  create_table "customers", force: :cascade do |t|
+    t.integer  "Number"
+    t.string   "Name1"
+    t.string   "Name2"
+    t.string   "Street"
+    t.integer  "HoNumber"
+    t.integer  "ZipCode"
+    t.string   "City"
+    t.string   "Country"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
   create_table "users", force: :cascade do |t|
     t.string   "email",                  default: "", null: false
     t.string   "encrypted_password",     default: "", null: false
