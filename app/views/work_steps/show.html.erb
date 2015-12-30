@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Displayname:</strong>
+  <%= @work_step.DisplayName %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @work_step.Description %>
+</p>
+
+<p>
+  <strong>Allowquantityinput:</strong>
+  <%= @work_step.AllowQuantityInput %>
+</p>
+
+<%= link_to 'Edit', edit_work_step_path(@work_step) %> |
+<%= link_to 'Back', work_steps_path %>

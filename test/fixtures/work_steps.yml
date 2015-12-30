@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  DisplayName: MyString
+  Description: MyString
+  AllowQuantityInput: false
+
+two:
+  DisplayName: MyString
+  Description: MyString
+  AllowQuantityInput: false
