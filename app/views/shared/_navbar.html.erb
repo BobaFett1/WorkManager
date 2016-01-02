@@ -13,6 +13,9 @@
 
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav navbar-right">
+        <% if user_signed_in? %>
+        <li><%= image_tag current_user.avatar.url(:thumb) , :class => "round-image-50"%></li>
+        <% end %>
         <li><%= link_to "Home", root_path %></li>
         <li class="dropdown">
           <a class="dropdown-to" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Verwaltung <span class="caret"></span></a>
@@ -26,8 +29,8 @@
 
       <p class="navbar-text pull-right">
         <% if user_signed_in? %>
-            Logged in as <strong><%= current_user.email %></strong>
-            <%= link_to 'Edit profile', edit_user_registration_path, :class => 'navbar-link' %> |
+            Logged in as <strong><%= current_user.username %></strong>
+            <%= link_to 'Edit profile', edit_user_registration_path, :class => 'navbar-link' %>|
             <%= link_to "Logout", destroy_user_session_path, method: :delete, :class => 'navbar-link'  %>
         <% else %>
             <%= link_to "Sign up", new_user_registration_path, :class => 'navbar-link'  %> |
