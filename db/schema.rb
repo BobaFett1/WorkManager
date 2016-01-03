@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20151230171319) do
+ActiveRecord::Schema.define(version: 20160103130314) do
 
   create_table "customers", force: :cascade do |t|
     t.integer  "Number"
@@ -39,9 +39,26 @@ ActiveRecord::Schema.define(version: 20151230171319) do
     t.string   "last_sign_in_ip"
     t.datetime "created_at",                          null: false
     t.datetime "updated_at",                          null: false
+    t.string   "username"
+    t.string   "firstname"
+    t.string   "lastname"
+    t.string   "avatarurl"
+    t.string   "avatar_file_name"
+    t.string   "avatar_content_type"
+    t.integer  "avatar_file_size"
+    t.datetime "avatar_updated_at"
+    t.boolean  "IsAdmin"
   end
 
   add_index "users", ["email"], name: "index_users_on_email", unique: true
   add_index "users", ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
+
+  create_table "work_steps", force: :cascade do |t|
+    t.string   "DisplayName"
+    t.string   "Description"
+    t.boolean  "AllowQuantityInput"
+    t.datetime "created_at",         null: false
+    t.datetime "updated_at",         null: false
+  end
 
 end

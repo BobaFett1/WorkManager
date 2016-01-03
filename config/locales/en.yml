@@ -21,3 +21,11 @@
 
 en:
   hello: "Hello world"
+
+  work_steps: "Work Steps"
+  work_step: "Work Step"
+
+  customers: "Customers"
+  customer: "Customer"
+
+  manage: "Manage"

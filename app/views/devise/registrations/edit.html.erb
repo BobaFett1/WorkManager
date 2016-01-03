@@ -12,17 +12,31 @@
           <div>Currently waiting confirmation for: <%= resource.unconfirmed_email %></div>
       <% end %>
 
-
-      <%= f.label :password, 'Password', class: 'sr-only' %><i>(leave blank if you don't want to change it)</i><br />
+      <%= f.label :username, 'Username', class: 'sr-only' %>
+      <%= f.text_field :username, class: 'form-control', placeholder: 'Username' %>
+      <br/>
+      <%= f.label :firstname, 'Vorname', class: 'sr-only' %>
+      <%= f.text_field :firstname, class: 'form-control', placeholder: 'Vorname' %>
+      <br/>
+      <%= f.label :lastname, 'Nachname', class: 'sr-only' %>
+      <%= f.text_field :lastname, class: 'form-control', placeholder: 'Nachname' %>
+      <br/>
+      <br/>
+      <%= f.label :IsAdmin, 'Administrator', class: 'sr-only' %>
+      <%= f.check_box :IsAdmin, class: 'form-control', placeholder: 'Administrator?' %>
+      <br/>
+      <%= f.label :avatar, 'Avatar', class: 'sr-only' %>
+      <%= f.file_field :avatar %>
+      <%= image_tag current_user.avatar.url(:medium) , :class => "round-image-50"%>
+      <br/>
+      <%= f.label :password, 'Password', class: 'sr-only' %><i>(leave blank if you don't want to change it)</i>
       <%= f.password_field :password, autocomplete: "off", class: 'form-control', placeholder: 'Password' %>
 
       <%= f.label :password_confirmation, 'Password-repeat', class: 'sr-only' %>
       <%= f.password_field :password_confirmation, autocomplete: "off", class: 'form-control', placeholder: 'Password' %>
-
-
-      <%= f.label :current_password, 'Current Password', class: 'sr-only' %><i>(we need your current password to confirm your changes)</i><br />
+      <br/>
+      <%= f.label :current_password, 'Current Password', class: 'sr-only' %><i>(we need your current password to confirm your changes)</i>
       <%= f.password_field :current_password, autocomplete: "off", class: 'form-control', placeholder: 'Password' %>
-
       <br/>
       <%= f.submit "Update", class: 'btn btn-lg btn-primary btn-block' %>
   <% end %>
