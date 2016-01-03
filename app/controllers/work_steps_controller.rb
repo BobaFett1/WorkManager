@@ -2,6 +2,11 @@ class WorkStepsController < ApplicationController
   before_action :authenticate_user!
   before_action :set_work_step, only: [:show, :edit, :update, :destroy]
 
+  def DISPLAY_NAME
+    t('work_steps')
+  end
+
+
   # GET /work_steps
   # GET /work_steps.json
   def index

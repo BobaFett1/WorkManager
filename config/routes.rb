@@ -1,14 +1,23 @@
 Rails.application.routes.draw do
 
+  get 'access_denied/index'
+
+  get 'user_dashboard/index'
+
+  get 'admin_dashboard/index'
+
   resources :work_steps
+  resources :customers
+
   devise_for :users
+
+
   root 'welcome#index'
 
 
   get 'welcome/index'
   get 'about' => 'welcome#index', as: :about
 
-  resources :customers
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
