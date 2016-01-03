@@ -1,15 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c770c24e-3fb0-4276-b8e5-ddcebe994f91" name="Default" comment="Merge branch 'Developement' of https://github.com/BobaFett1/WorkManager into Development&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml&#10;">
+    <list default="true" id="c770c24e-3fb0-4276-b8e5-ddcebe994f91" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/javascripts/users/registrations.coffee" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/stylesheets/users/registrations.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/controllers/users/registrations_controller.rb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/helpers/users/registrations_helper.rb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/db/migrate/20160103130314_add_admin_column_to_user.rb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/controllers/users/registrations_controller_test.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/admin_dashboard_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/admin_dashboard_controller.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/application_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/application_controller.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/welcome_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/welcome_controller.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/devise/registrations/edit.html.erb" afterPath="$PROJECT_DIR$/app/views/devise/registrations/edit.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/routes.rb" afterPath="$PROJECT_DIR$/config/routes.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/schema.rb" afterPath="$PROJECT_DIR$/db/schema.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/seeds.rb" afterPath="$PROJECT_DIR$/db/seeds.rb" />
     </list>
     <ignored path="WorkManager.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -35,7 +34,28 @@
     <favorites_list name="WorkManager" />
   </component>
   <component name="FileEditorManager">
-    <leaf />
+    <leaf>
+      <file leaf-file-name="seeds.rb" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/db/seeds.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="8" column="82" selection-start-line="8" selection-start-column="82" selection-end-line="8" selection-end-column="82" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="user.rb" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/models/user.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.10055866">
+              <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="Git.Settings">
     <option name="PREVIOUS_COMMIT_AUTHORS">
@@ -164,7 +184,101 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="db" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="WorkManager" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="WorkManager" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="db" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="migrate" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="WorkManager" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="WorkManager" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="WorkManager" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="WorkManager" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="controllers" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="WorkManager" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="WorkManager" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="controllers" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="users" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="WorkManager" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="WorkManager" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="controllers" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="concerns" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -448,7 +562,13 @@
       <option name="project" value="LOCAL" />
       <updated>1451826155009</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Merge branch 'Developement' of https://github.com/BobaFett1/WorkManager into Development&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml&#10;">
+      <created>1451835698518</created>
+      <option name="number" value="00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1451835698518</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -491,9 +611,9 @@
     <MESSAGE value="Login pages customized" />
     <MESSAGE value="Changed minimum password length to 3" />
     <MESSAGE value="Diverses" />
-    <MESSAGE value="Merge branch 'Developement' of https://github.com/BobaFett1/WorkManager into Development&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml&#10;" />
     <MESSAGE value="# MERGED Michel/Developement with mine" />
-    <option name="LAST_COMMIT_MESSAGE" value="# MERGED Michel/Developement with mine" />
+    <MESSAGE value="Merge branch 'Developement' of https://github.com/BobaFett1/WorkManager into Development&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml&#10;" />
+    <option name="LAST_COMMIT_MESSAGE" value="Merge branch 'Developement' of https://github.com/BobaFett1/WorkManager into Development&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml&#10;" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -519,13 +639,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/user.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.092307694">
-          <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -827,14 +940,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/db/seeds.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.13407822">
-          <caret line="8" column="88" selection-start-line="8" selection-start-column="88" selection-end-line="8" selection-end-column="88" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/db/migrate/20160103130314_add_admin_column_to_user.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.033519555">
@@ -895,6 +1000,22 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.20111732">
           <caret line="12" column="37" selection-start-line="12" selection-start-column="37" selection-end-line="12" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db/seeds.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="8" column="82" selection-start-line="8" selection-start-column="82" selection-end-line="8" selection-end-column="82" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/user.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.10055866">
+          <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
           <folding />
         </state>
       </provider>
