@@ -9,8 +9,9 @@ Rails.application.routes.draw do
   resources :work_steps
   resources :customers
 
-  devise_for :users
 
+  devise_for :users, only: [:show, :edit, :update]  # dm20160103 => :destroy and :update handled in users/registrations_controller
+  devise_for :users, controllers: { registrations: "users/registrations"}
 
   root 'welcome#index'
 

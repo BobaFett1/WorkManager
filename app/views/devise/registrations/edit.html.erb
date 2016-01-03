@@ -21,6 +21,10 @@
       <%= f.label :lastname, 'Nachname', class: 'sr-only' %>
       <%= f.text_field :lastname, class: 'form-control', placeholder: 'Nachname' %>
       <br/>
+      <br/>
+      <%= f.label :IsAdmin, 'Administrator', class: 'sr-only' %>
+      <%= f.check_box :IsAdmin, class: 'form-control', placeholder: 'Administrator?' %>
+      <br/>
       <%= f.label :avatar, 'Avatar', class: 'sr-only' %>
       <%= f.file_field :avatar %>
       <%= image_tag current_user.avatar.url(:medium) , :class => "round-image-50"%>
