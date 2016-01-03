@@ -19,13 +19,33 @@
 # To learn more, please read the Rails Internationalization guide
 # available at http://guides.rubyonrails.org/i18n.html.
 
-en:
-  hello: "Hello world"
+de:
+  hello: "Hallo Welt"
 
-  work_steps: "Work Steps"
-  work_step: "Work Step"
+  home: "Startseite"
+  about: "Über"
 
-  customers: "Customers"
-  customer: "Customer"
+  work_steps: "Arbeitsschritte"
+  work_step: "Arbeitsschritt"
 
-  manage: "Manage"
+  access_denied: "Zutritt verweigert"
+
+  user_dashboard: "Benutzer Übersichtsseite"
+  admin_dashboard: "Administrator Übersichtsseite"
+
+  customers: "Kunden"
+  customer: "Kunde"
+
+  manage: "Verwalten"
+
+  list:
+    show_single: "Anzeigen"
+    show_all: "Alle anzeigen"
+    edit: "Bearbeiten"
+    new: "Anlegen"
+    refresh: "Aktualisieren"
+
+  submit: "Bestätigen"
+  back: "Zurück"
+
+  askForConfirmation: "Sind Sie sicher?"

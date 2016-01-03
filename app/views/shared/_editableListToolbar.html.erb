@@ -1,7 +1,7 @@
 <div class="btn-group">
-  <%= link_to ('<span class="glyphicon glyphicon-plus" aria-hidden="true"></span> New').html_safe,
+  <%= link_to ('<span class="glyphicon glyphicon-plus" aria-hidden="true"></span>').html_safe << ' ' << t('list.new'),
               { controller: controller_name, action: "new" }, class: 'btn btn-primary'  %>
-  <%= link_to ('<span class="glyphicon glyphicon-refresh" aria-hidden="true"></span> Refresh').html_safe,
+  <%= link_to ('<span class="glyphicon glyphicon-refresh" aria-hidden="true"></span>').html_safe << ' ' << t('list.refresh'),
               { controller: controller_name }, class: 'btn btn-primary' %>
 
 </div>

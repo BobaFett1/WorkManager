@@ -1,19 +1,21 @@
-<p id="notice"><%= notice %></p>
+<h3><%= t('list.show_single') %></h3>
 
 <p>
-  <strong>Displayname:</strong>
+  <strong>Bezeichnung:</strong>
   <%= @work_step.DisplayName %>
 </p>
 
 <p>
-  <strong>Description:</strong>
+  <strong>Beschreibung:</strong>
   <%= @work_step.Description %>
 </p>
 
 <p>
-  <strong>Allowquantityinput:</strong>
+  <strong>Mengeneingabe:</strong>
   <%= @work_step.AllowQuantityInput %>
 </p>
 
-<%= link_to 'Edit', edit_work_step_path(@work_step) %> |
-<%= link_to 'Back', work_steps_path %>
+<div class="btn-group btn-group-lg">
+  <%= link_to t('list.edit'), edit_work_step_path(@work_step), class: 'btn btn-default' %>
+  <%= link_to t('back'), work_steps_path, class: 'btn btn-default' %>
+</div>
