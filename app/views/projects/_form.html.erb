@@ -1,0 +1,38 @@
+<%= form_for(@project) do |f| %>
+    <% if @project.errors.any? %>
+        <div id="error_explanation">
+          <h2><%= pluralize(@project.errors.count, "error") %> prohibited this project from being saved:</h2>
+
+          <ul>
+            <% @project.errors.full_messages.each do |message| %>
+                <li><%= message %></li>
+            <% end %>
+          </ul>
+        </div>
+    <% end %>
+
+    <div class="field">
+      <%= f.label :DisplayName, 'Bezeichnung' %><br>
+      <%= f.text_field :DisplayName, class: 'form-control' %>
+    </div>
+    <div class="field">
+      <%= f.label :Description, 'Beschreibung' %><br>
+      <%= f.text_area :Description, class: 'form-control' %>
+    </div>
+    <div class="field">
+      <%= f.label :DueDate, 'Fälligkeitsdatum' %><br>
+      <%= f.date_select :DueDate, class: 'form-control' %>
+    </div>
+    <div class="field">
+      <%= f.label :customer_id, 'Kunde' %><br>
+      <%= f.select :customer_id, Customer.all.map {|c| [c.Number.to_s << ' ' << c.DisplayName , c.id]} %>
+    </div>
+
+    <div class="btn-group btn-group-lg">
+      <%= f.submit t('submit'), class: 'btn btn-default' %>
+      <% if controller.action_name == 'edit' %>
+          <%= link_to t('list.show_single'), @project, class: 'btn btn-default' %>
+      <% end %>
+      <%= link_to t('back'), projects_path, class: 'btn btn-default' %>
+    </div>
+<% end %>

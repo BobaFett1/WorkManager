@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
 
+
   get 'access_denied/index'
 
   get 'user_dashboard/index'
@@ -8,7 +9,7 @@ Rails.application.routes.draw do
 
   resources :work_steps
   resources :customers
-
+  resources :projects
 
   devise_for :users, only: [:show, :edit, :update]  # dm20160103 => :destroy and :update handled in users/registrations_controller
   devise_for :users, controllers: { registrations: "users/registrations"}

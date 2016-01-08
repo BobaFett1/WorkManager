@@ -36,6 +36,9 @@ de:
   customers: "Kunden"
   customer: "Kunde"
 
+  projects: "Projekte"
+  project: "Projekt"
+
   manage: "Verwalten"
 
   list:
@@ -49,3 +52,57 @@ de:
   back: "Zurück"
 
   askForConfirmation: "Sind Sie sicher?"
+
+  date:
+      abbr_day_names:
+      - So
+      - Mo
+      - Di
+      - Mi
+      - Do
+      - Fr
+      - Sa
+      abbr_month_names:
+      -
+      - Jan
+      - Feb
+      - Mär
+      - Apr
+      - Mai
+      - Jun
+      - Jul
+      - Aug
+      - Sep
+      - Okt
+      - Nov
+      - Dez
+      day_names:
+      - Sonntag
+      - Montag
+      - Dienstag
+      - Mittwoch
+      - Donnerstag
+      - Freitag
+      - Samstag
+      formats:
+        default: "%d.%m.%Y"
+        long: "%e. %B %Y"
+        short: "%e. %b"
+      month_names:
+      -
+      - Januar
+      - Februar
+      - März
+      - April
+      - Mai
+      - Juni
+      - Juli
+      - August
+      - September
+      - Oktober
+      - November
+      - Dezember
+      order:
+      - :day
+      - :month
+      - :year

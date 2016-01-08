@@ -1,0 +1,21 @@
+<h3><%= t('list.show_single') %></h3>
+
+<p>
+  <strong>Bezeichnung:</strong>
+  <%= @project.DisplayName %>
+</p>
+
+<p>
+  <strong>Beschreibung:</strong>
+  <%= @project.Description %>
+</p>
+
+<p>
+  <strong>Fälligkeitsdatum:</strong>
+  <%= @project.DueDate %>
+</p>
+
+<div class="btn-group btn-group-lg">
+  <%= link_to "Bearbeiten", edit_project_path(@project), class: 'btn btn-default' %>
+  <%= link_to "Zurück", projects_path, class: 'btn btn-default' %>
+</div>
